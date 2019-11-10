@@ -2,10 +2,12 @@ import sys
 import numpy as np
 import random
 
+# TODO
 # Transition function: P(s, a, s'), specifies
 # probability of arriving at any state s' after
 # performing action a in state s.
 
+# TODO
 # Reward function: R(s, a), specifies reward AI
 # receives after performing action a in state s.
 # AI wins = 1, AI loses = -1, Tie = 0.
@@ -159,7 +161,7 @@ def duplicateState(state):
                 new_state[i][j][k] = state[i][j][k]
     return new_state
 
-# Program starts here...
+# TODO: Main program starts here...
 # Games played by AI vs AI
 state_vals_AI_1 = initializeVals()
 state_vals_AI_2 = initializeVals()
@@ -173,11 +175,13 @@ else:
     n2 = 500
     n3 = 2000
 
+# TODO
 # Explore with probability epsilon
 # Exploit with probability 1 - epsilon
 # Decrease epsilon over time until it approaches 0
 epsilon = 0.3
 
+# TODO
 # Discount factor that makes AI place a greater value on
 # immediate rewards.
 gamma = 0.9
