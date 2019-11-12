@@ -9,7 +9,7 @@ Before we started training, we need to use Q-learning to decide the next move an
 Now we implemented the updateQ function which took in the reward, state and possible_moves as parameter. We first calculated the largest q-value given the state and possible moves and updated the Q table through bellman equation which was  Q(s,a) ← Q(s,a) + α(R(s) + γ Q(s′,a′) − Q(s,a)) iteratively.
 
 Now we have all functions need and we can write train function. While not done, we decide the player and called the epsilon_greedy function to decide the next action. The epsilon_greedy function store the field “latest q” and “latest ( state,action)” that corresponding to current state and the action decide to take. Those fields would be used in later Q updated. We then called” step function” which takes in the player and the new action did. Now next self.board and self.possible _moves would all updated because a new space was taken. This function return rewards based on the evaluation of this move. If reward==1,
- # won
+                   # won
                     if isPlayer1:
                         self.player1.updateQ(reward, self.board, self.possible_moves())
                         self.player2.updateQ(-1 * reward, self.board, self.possible_moves())
