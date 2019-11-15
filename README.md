@@ -8,7 +8,7 @@ Python 3.6
 
 You can choose the number of iterations
 ```
-python 3D_Tic_Tac_Toe --iteration 500
+python 3D_Tic_Tac_Toe.py --iteration 500
 ```
 
 ## View utility values
